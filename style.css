@@ -468,8 +468,24 @@ a.atendimento-item:hover span { color: #FFFFFF; }
 /* ==========================================================================
    8. CONTATO
    ========================================================================== */
+/* Galeria visual dos procedimentos */
+.procedimentos-galeria { margin-top: 70px; }
+.procedimentos-galeria-header { max-width: 720px; margin: 0 auto 35px; }
+.procedimentos-galeria-header h3 { margin: 12px 0; color: #0A2E36; font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); }
+.procedimentos-galeria-header p { color: #6E6E6E; }
+.procedimentos-fotos-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+.procedimento-foto-card { overflow: hidden; border: 1px solid rgba(10,46,54,0.08); border-radius: 22px; background: #FFFFFF; box-shadow: 0 16px 35px rgba(10,46,54,0.08); color: inherit; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.procedimento-foto-card:hover { transform: translateY(-7px); box-shadow: 0 22px 45px rgba(10,46,54,0.14); }
+.procedimento-foto-placeholder { display: flex; min-height: 245px; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(145deg, #0A2E36, #174d53); color: rgba(255,255,255,0.75); font-family: 'Montserrat', sans-serif; font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase; }
+.procedimento-foto-placeholder i { color: #D4AF37; font-size: 2rem; }
+.procedimento-foto-conteudo { padding: 24px; }
+.procedimento-foto-conteudo h4 { margin-bottom: 10px; color: #0A2E36; font-family: 'Playfair Display', serif; font-size: 1.25rem; }
+.procedimento-foto-conteudo p { min-height: 66px; color: #6E6E6E; font-size: 0.86rem; line-height: 1.7; }
+.procedimento-cta { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; color: #0A2E36; font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; }
+.procedimentos-aviso { margin-top: 24px; color: #6E6E6E; font-size: 0.78rem; text-align: center; }
+
 .contato-section { background-color: #FFFFFF; }
-.contato-container { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 70px; align-items: center; }
+.contato-container { display: block; }
 .contato-form-wrapper { padding: 50px; box-shadow: 0 20px 50px rgba(0,0,0,0.03); }
 .contato-form-wrapper h3 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 10px; color: #0A2E36; }
 .contato-form-wrapper p { color: #6E6E6E; font-size: 0.9rem; margin-bottom: 30px; }
@@ -488,12 +504,15 @@ input:focus, textarea:focus { outline: none; border-color: #D4AF37; background-c
     background-color: #FDFBF7; text-decoration: none; color: #0A2E36;
     font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500; transition: all 0.3s ease;
 }
+.social-box:link, .social-box:visited, .social-box:hover, .social-box:active { text-decoration: none !important; }
 .social-box:hover { background-color: #FFF0F2; transform: translateY(-2px); }
+.social-connect { max-width: 850px; margin: 0 auto; text-align: center; }
+.social-links-grid { margin-top: 28px; text-align: left; }
 
 /* ==========================================================================
    9. FOOTER E FLUTUANTE
    ========================================================================== */
-footer { background-color: #0A2E36; color: rgba(255,255,255,0.7); padding-top: 60px; }
+footer { width: 100%; overflow: hidden; border-radius: 34px 34px 0 0; background-color: #0A2E36; color: rgba(255,255,255,0.7); padding-top: 60px; }
 .footer-container { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 50px; margin-bottom: 50px; }
 .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #FFFFFF; text-decoration: none; font-weight: 600; display: block; margin-bottom: 15px; }
 .footer-quote { font-style: italic; font-family: 'Playfair Display', serif; color: #F3E5AB; }
@@ -777,4 +796,17 @@ footer ul a:hover { color: #D4AF37; padding-left: 5px; }
         right: 20px;
     }
 
+}
+
+/* Ajustes responsivos da galeria */
+@media (max-width: 900px) {
+    .procedimentos-fotos-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+    .procedimentos-fotos-grid { grid-template-columns: 1fr; }
+    .procedimento-foto-placeholder { min-height: 220px; }
+    .slider-wrapper-dep { height: auto; max-height: 330px; overflow-x: hidden; overflow-y: auto; padding-right: 6px; }
+    .depoimento-card-v2.active { position: relative; }
+    .dep-controls { position: sticky; bottom: 0; z-index: 5; padding: 10px 0; background: rgba(253,251,247,0.94); }
 }
