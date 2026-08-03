@@ -2083,3 +2083,40 @@ body.modal-aberto {
         max-width: 100% !important;
     }
 }
+.procedimentos-aviso {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin: 30px auto 0;
+
+    color: #6E6E6E;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    text-align: center;
+}
+
+.procedimentos-aviso i {
+    color: #D4AF37;
+    flex-shrink: 0;
+}
+
+@media (max-width: 520px) {
+    .procedimentos-aviso {
+        max-width: 320px;
+        padding: 0 10px;
+
+        align-items: flex-start;
+
+        font-size: 0.75rem;
+        line-height: 1.6;
+    }
+
+    .procedimentos-aviso i {
+        margin-top: 4px;
+    }
+}
