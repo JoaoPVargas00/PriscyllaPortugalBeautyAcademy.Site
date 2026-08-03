@@ -1976,3 +1976,110 @@ body.modal-aberto {
         padding-top: 0;
     }
 }
+
+/* ==========================================================
+   CORREÇÃO DOS PROCEDIMENTOS NO CELULAR
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+    /* Impede que a animação esconda a seção no celular */
+    .atendimentos-section.scroll-reveal,
+    .atendimentos-section.scroll-reveal.revealed {
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        transform: none !important;
+    }
+
+    .atendimentos-section {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        overflow: visible !important;
+    }
+
+    .atendimentos-section > .container {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+
+    /* Procedimentos escritos */
+    .atendimentos-grid {
+        display: grid !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    .atendimento-item {
+        display: block !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* Galeria com as fotos */
+    .procedimentos-galeria {
+        display: block !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        margin-top: 55px !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        transform: none !important;
+    }
+
+    .procedimentos-fotos-grid {
+        display: grid !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        grid-template-columns: 1fr !important;
+        gap: 22px !important;
+    }
+
+    .procedimento-foto-card {
+        display: block !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        transform: none;
+    }
+
+    .procedimento-foto-container,
+    .procedimento-foto-imagem,
+    .procedimento-foto-placeholder,
+    .procedimento-foto-dupla {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .procedimento-foto-conteudo {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
