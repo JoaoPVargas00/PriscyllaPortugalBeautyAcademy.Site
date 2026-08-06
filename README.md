@@ -1,4 +1,4 @@
-Priscylla Portugal Beauty Academy
+ Priscylla Portugal Beauty Academy
 
 Site institucional desenvolvido para a Priscylla Portugal Beauty Academy, com o objetivo de apresentar a profissional, divulgar seus cursos, procedimentos estéticos, resultados e facilitar o contato com clientes e alunas.
 
@@ -101,36 +101,6 @@ As principais fontes utilizadas são:
 * Montserrat
 
 ⸻
-
-Estrutura do projeto
-
-priscylla-portugal-beauty-academy/
-│
-├── index.html
-├── style.css
-├── script.js
-├── FOTO1.jpeg
-├── FOTO2.jpeg
-└── README.md
-
-⸻
-
-Como executar o projeto
-
-1. Faça o download ou clone este repositório:
-
-git clone URL-DO-REPOSITORIO
-
-2. Acesse a pasta do projeto:
-
-cd priscylla-portugal-beauty-academy
-
-3. Abra o arquivo index.html no navegador.
-
-Também é possível utilizar a extensão Live Server no Visual Studio Code para executar o projeto localmente.
-
-⸻
-
 Responsividade
 
 O site foi desenvolvido para funcionar em diferentes tamanhos de tela:
